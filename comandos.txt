@@ -8,12 +8,23 @@
 
 3 - CONFIGURAR O REPOSITORIO GIT
 
+
+    GERAR UMA CHAVE SSH
+    dentro do gitbash
+    ssh-keygen -f ~/.ssh/brunorimbanojunior_rsa
+    copiar a chave publica
+    cat ~/.ssh/brunorimbanojunior_rsa.pub
+
     git config --global user.name 'Bruno Rimbano Junior'
     git config --global user.email 'juba.rimbano@gmail.com'
     git config --global init.defaultBranch main
     # Configure o .gitignore
-    
+
     git init
     git add .
     git commit -m 'Mensagem'
+
+
+
+
     git remote add origin URL_DO_GIT
