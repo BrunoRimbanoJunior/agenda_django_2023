@@ -1,0 +1,19 @@
+1 - INICIANDO PROJETO
+
+    django-admin startproject project .
+
+2 - TESTANDO SE O SERVIDOR SUBIU
+
+    python manage.py runserver
+
+3 - CONFIGURAR O REPOSITORIO GIT
+
+    git config --global user.name 'Bruno Rimbano Junior'
+    git config --global user.email 'juba.rimbano@gmail.com'
+    git config --global init.defaultBranch main
+    # Configure o .gitignore
+    
+    git init
+    git add .
+    git commit -m 'Mensagem'
+    git remote add origin URL_DO_GIT
