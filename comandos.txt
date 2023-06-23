@@ -28,3 +28,12 @@
 
 
     git remote add origin URL_DO_GIT
+
+4 - ADICIONANDO UM NOVO APP
+
+    python manage.py startapp nomedoapp
+
+    COPIA O NOME DO APP E ADICIONA EM SETTINGS
+
+5 - CRIANDO TEMPLATES
+    
