@@ -22,11 +22,7 @@
 
     git init
     git add .
-    git commit -m 'Mensagem'
-
-
-
-
+    git commit -m 'Mensagem'     
     git remote add origin URL_DO_GIT
 
 4 - ADICIONANDO UM NOVO APP
@@ -36,4 +32,43 @@
     COPIA O NOME DO APP E ADICIONA EM SETTINGS
 
 5 - CRIANDO TEMPLATES
+    - CRIAR PASTAS BASE
+        - basic_static
+            - global
+                -css
+        - base_ templates
+            - global
+
+6 - CONFIGURAR O SETTINGS
+    - dentro de TEMPLATES INFORMAR:
+        'DIRS':[
+            BASE_DIR / 'base_templates'
+        ],
+
+
+     STATICFILES_DIRS  = (
+        BASE_DIR / 'base_static',
+     ) 
+
+7 - DENTRO DA PASTA DO APP, CRIA-SE A PASTA TEMPLATES COM NAMESPACE contact
+    - contact
+        - template
+            -contact
+                - index.html     
+
+8 - DENTRO DO APP TAMBEM É NECESSARIO CRIAR O ARQUIVO urls.py
+
+
+9 - CONFIGURAR A VIEW PARA O arquivo urls.py
+    # Create your views here.
+        def index(request):
+            return render(request,
+                        'contact/index.html'
+                
+
+10 - REFERENCIAS A URLS DO APP, DENTRO DO URLS DO project
     
+    path('', include('contact.urls')),                            )
+
+11 - DENTRO DO ARQUIVO base.html, DEVE SE INSERIR A TAG STATIC DO django
+12 - ACRESCENTAR O LINK HREF PARA O CSS DA PASTA STATIC
